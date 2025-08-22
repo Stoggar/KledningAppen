@@ -1,0 +1,34 @@
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/wall.js"></script>
+<link rel="stylesheet" type="text/css" href="css/kledning.css">
+
+<h1> Kledning-hjelperen </h1>
+<input class="kledning_input" type="text" id="overligger" name="overligger" placeholder="bredde overligger (mm)"><br>
+<input class="kledning_input" type="text" id="underligger" name="underligger" placeholder="bredde underligger (mm)"><br>
+<input class="kledning_input" type="text" id="vegg" name="vegg" placeholder="lengde (mm)"><br>
+<input class="kledning_input" type="text" id="omlegg" name="min_omlegg" placeholder="min omlegg (mm)"><br>
+
+<button class="kledning_button" type="submit" id="ready" name="ready" value="klar!" onclick="get_distances()">klar!</button>
+
+<p id="numbers_output"></p>
+
+<h2>Forklaring</h2>
+<p>
+   Dette er en kalulator for stående kledning. Fest underliggere ved hjørner, vinduer, dører og den slags først. 
+   Tallene du får over viser avstand fra venstre side av venstre underligger (denne må være på plass allerede) til venstre side av underliggerene du skal feste på veggen. 
+</p>
+
+<p> 
+   <b> Overligger: </b> ytterste bord <br>
+   <b> Underligger: </b> innerste bord <br>
+   <b> Lengde: </b> avstand fra venstre side av første underligger til venstre side av siste underligger. (Begge disse må være festet allerede) <br>
+   <b> Min omlegg: </b> minste overlapp mellom overligger og underligger <br>
+</p>
+
+<p>
+   <b>Eksempel:</b> <br>
+   Appen hjelper ikke med å plassere de røde underliggerene. 
+   Fest disse først. 
+   Appen gir avstand fra der det står 0, til neste underliggere (x1, x2, ...). 
+<img src="media/kledning_illustrasjon.png" style="width:inherit;">
+</p>
